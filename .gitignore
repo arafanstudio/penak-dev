@@ -3,6 +3,9 @@
 build/
 dist/
 
+# Sanity files
+.sanity
+
 # System Files
 .DS_Store
 Thumbs.db
