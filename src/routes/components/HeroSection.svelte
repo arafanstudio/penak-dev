@@ -73,13 +73,13 @@
             <div class="flex items-center justify-center gap-4">
                 <div class="w-12 h-px bg-yellow-200/50"></div>
                 <span class="text-yellow-200 text-xs md:text-sm font-bold tracking-[0.4em] uppercase">
-                    Jasa Pembuatan Website Profesional
+                    Website Beres, Bisnis Sukses.
                 </span>
             </div>
             
             <!-- Headline -->
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] font-['Playfair_Display']">
-                Wujudkan Website Impian Anda Bersama Penak Dev
+                Bikin Website?<br>Gak Pakai Pusing.
             </h1>
             
             <!-- CTA Button -->

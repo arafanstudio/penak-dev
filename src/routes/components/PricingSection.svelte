@@ -311,7 +311,7 @@
 	});
 </script>
 
-<section id="pricing" bind:this={sectionRef} class="py-24 relative overflow-hidden bg-[#0A0A0A]">
+<section id="pricing" bind:this={sectionRef} class="py-24 relative overflow-hidden bg-[#000000]">
 	<ParticleBackground />
 	
 	<div class="container relative z-10">
@@ -354,8 +354,8 @@
 
 					<div class="space-y-4 mb-8 flex-grow">
 						{#each currentFirstPlan.features as feature}
-							<div class="flex items-start gap-3">
-								<div class="mt-1 {feature.included ? 'bg-yellow-200/20' : 'bg-white/5'} rounded-full p-1">
+							<div class="flex items-end gap-3">
+								<div class="{feature.included ? 'bg-yellow-200/20' : 'bg-white/5'} rounded-full p-1">
 									{#if feature.included}
 										<Check size={14} class="text-yellow-200" />
 									{:else}
@@ -487,8 +487,8 @@
 
 					<div class="space-y-4 mb-8 flex-grow">
 						{#each currentSecondPlan.features as feature}
-							<div class="flex items-start gap-3">
-								<div class="mt-1 {feature.included ? 'bg-yellow-200/20' : 'bg-white/5'} rounded-full p-1">
+							<div class="flex items-end gap-3">
+								<div class="{feature.included ? 'bg-yellow-200/20' : 'bg-white/5'} rounded-full p-1">
 									{#if feature.included}
 										<Check size={14} class="text-yellow-200" />
 									{:else}
@@ -612,8 +612,8 @@
 
 					<div class="space-y-4 mb-8 flex-grow">
 						{#each currentThirdPlan.features as feature}
-							<div class="flex items-start gap-3">
-								<div class="mt-1 {feature.included ? 'bg-yellow-200/20' : 'bg-white/5'} rounded-full p-1">
+							<div class="flex items-end gap-3">
+								<div class="{feature.included ? 'bg-yellow-200/20' : 'bg-white/5'} rounded-full p-1">
 									{#if feature.included}
 										<Check size={14} class="text-yellow-200" />
 									{:else}

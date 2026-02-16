@@ -49,8 +49,8 @@
 
     const navLinks = [
         { name: 'Layanan', href: '#layanan' },
-        { name: 'Cara Kerja', href: '#cara-kerja' },
-        { name: 'Tentang', href: '#tentang' }
+        { name: 'Harga', href: '#pricing' },
+        { name: 'Kontak', href: '/contact' }
     ];
 </script>
 

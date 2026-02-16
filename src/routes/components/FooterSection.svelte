@@ -90,13 +90,10 @@
 				<div class="link-column space-y-6">
 					<h4 class="text-sm font-bold uppercase tracking-[0.2em] text-yellow-200/80">Bantuan</h4>
 					<ul class="space-y-4">
-						{#each ['Cek Pesanan', 'Kontak', 'Kebijakan', 'Syarat'] as item}
-							<li>
-								<button class="text-white/60 hover:text-yellow-200 transition-colors cursor-pointer bg-none border-none p-0 text-left text-sm font-medium">
-									{item}
-								</button>
-							</li>
-						{/each}
+						<li><a href="/" class="text-white/60 hover:text-yellow-200 transition-colors text-sm font-medium">Cek Pesanan</a></li>
+						<li><a href="/contact" class="text-white/60 hover:text-yellow-200 transition-colors text-sm font-medium">Kontak</a></li>
+						<li><a href="/privacy" class="text-white/60 hover:text-yellow-200 transition-colors text-sm font-medium">Kebijakan Privasi</a></li>
+						<li><a href="/terms" class="text-white/60 hover:text-yellow-200 transition-colors text-sm font-medium">Syarat & Ketentuan</a></li>
 					</ul>
 				</div>
 
@@ -122,8 +119,9 @@
 		<div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
 			<div class="flex flex-wrap justify-center gap-6 text-sm text-white/40">
 				<p>© 2026 penak.online. Semua hak dilindungi.</p>
-				<button class="hover:text-white transition-colors cursor-pointer bg-none border-none p-0">Privacy Policy</button>
-				<button class="hover:text-white transition-colors cursor-pointer bg-none border-none p-0">Terms of Service</button>
+				<a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+				<a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>
+				<a href="/refund" class="hover:text-white transition-colors">Refund Policy</a>
 			</div>
 			<p class="text-sm font-medium text-white/50 italic">Dibuat dengan rasa nyaman ✨</p>
 		</div>
