@@ -66,14 +66,19 @@
 	<div class="container relative z-10">
 		<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
 			<!-- Sidebar -->
-			<div class="lg:col-span-5 space-y-6">
-				<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">FAQ</div>
+			<div class="lg:col-span-5 space-y-6 text-center lg:text-left">
+				<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">
+					FAQ
+				</div>
+				
 				<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
-					Pertanyaan yang <br /> Sering Diajukan
+					Pertanyaan yang <br class="hidden lg:block" /> Sering Diajukan
 				</h3>
-				<p class="text-white/60 text-lg leading-relaxed">
+				
+				<p class="text-white/60 text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
 					Punya pertanyaan lain? Jangan ragu untuk menghubungi tim kami melalui WhatsApp atau Email.
 				</p>
+				
 				<div class="pt-4">
 					<a href="#contact" class="inline-flex items-center gap-2 text-yellow-200 font-bold hover:underline">
 						Hubungi Customer Service →

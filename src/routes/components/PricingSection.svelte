@@ -460,7 +460,7 @@
 			<div bind:this={cards[1]} class="h-full flex-shrink-0 w-[85%] md:w-auto snap-center">
 				<Card class="relative bg-white/5 border border-yellow-200/30 rounded-[2.5rem] p-6 md:p-8 flex flex-col h-full transition-all duration-500 hover:bg-white/10 hover:border-yellow-200/50 ring-1 ring-yellow-200/20">
 					<div class="absolute -top-4 left-1/2 -translate-x-1/2">
-						<Badge class="bg-yellow-200 text-black font-black px-4 py-1 rounded-full shadow-lg shadow-yellow-200/20">POPULER</Badge>
+						<Badge class="bg-yellow-200 hover:bg-yellow-300 text-black font-black px-4 py-1 rounded-full shadow-lg shadow-yellow-200/20">POPULER</Badge>
 					</div>
 
 					<div class="flex p-1 bg-white/5 rounded-xl mb-6 border border-white/10">
@@ -713,7 +713,7 @@
 		</div>
 
 		<!-- Global Toggle Button Below Cards -->
-		<div class="flex justify-center mt-16">
+		<div class="flex justify-center mt-8">
 			<button
 				on:click={() => isAllExpanded = !isAllExpanded}
 				class="group relative px-8 py-3 rounded-full bg-white/5 border border-yellow-200/30 text-yellow-200 font-bold text-sm transition-all duration-300 hover:bg-yellow-200 hover:text-black hover:border-yellow-200 flex items-center gap-3 shadow-lg shadow-yellow-200/5"

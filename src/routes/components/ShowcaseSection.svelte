@@ -196,11 +196,11 @@
 								<h4 class="text-xl md:text-2xl font-bold text-white text-center px-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
 									{item.title}
 								</h4>
-								{#if item.url && item.url !== '#'}
+								<!-- {#if item.url && item.url !== '#'}
 									<span class="mt-4 text-white/60 text-xs font-medium border border-white/20 px-3 py-1 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-150">
 										View Project
 									</span>
-								{/if}
+								{/if} -->
 							</div>
 						</div>
 					</div>
@@ -239,11 +239,11 @@
 								<h4 class="text-xl md:text-2xl font-bold text-white text-center px-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
 									{item.title}
 								</h4>
-								{#if item.url && item.url !== '#'}
+								<!-- {#if item.url && item.url !== '#'}
 									<span class="mt-4 text-white/60 text-xs font-medium border border-white/20 px-3 py-1 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-150">
 										View Project
 									</span>
-								{/if}
+								{/if} -->
 							</div>
 						</div>
 					</div>

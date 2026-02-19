@@ -63,15 +63,19 @@
 	<div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/30 to-black/95 z-0 pointer-events-none"></div>
 	
 	<div class="relative z-10">
-		<div class="container mx-auto px-4 mb-16">
-			<div class="flex flex-col lg:flex-row justify-between items-end gap-8">
-				<div class="max-w-2xl space-y-4">
-					<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">Testimoni</div>
+		<div class="container mx-auto px-4 mb-8">
+			<div class="flex flex-col lg:flex-row justify-between items-center lg:items-end gap-8">
+				
+				<div class="max-w-2xl space-y-4 text-center lg:text-left">
+					<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">
+						Testimoni
+					</div>
 					<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
-						Apa Kata Mereka <br /> Tentang Kami
+						Apa Kata Mereka <br class="hidden lg:block" /> Tentang Kami
 					</h3>
 				</div>
-				<div class="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+
+				<div class="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-2xl border border-white/10 w-fit">
 					<div class="flex">
 						{#each Array(5) as _}
 							<Star size={18} class="text-yellow-200 fill-yellow-200" />
