@@ -153,13 +153,13 @@
 	<div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/30 to-black/95 z-0 pointer-events-none"></div>
 	
 	<div class="relative z-10">
-		<div bind:this={sectionHeader} class="max-w-3xl mx-auto text-center mb-16 space-y-4 px-4">
+		<div bind:this={sectionHeader} class="max-w-3xl mx-auto text-center mb-4 md:mb-8 space-y-4 px-4">
 			<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">Showcase Project</div>
 			<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
-				Karya Terbaik Kami <br class="hidden md:block" /> Untuk Anda
+				Meramu Visi <br class="block md:hidden" />Menjadi Eksistensi
 			</h3>
-			<p class="text-lg text-white/60 leading-relaxed">
-				Lihat bagaimana kami membantu klien mewujudkan visi digital mereka melalui solusi web yang inovatif dan berkualitas tinggi.
+			<p class="text-sm md:text-lg text-white/60 leading-relaxed">
+				Manifestasi kreativitas tanpa batas melalui dedikasi dan presisi.<br class="hidden md:block" /> Biarkan karya berbicara tentang standar kualitas yang kami pegang.
 			</p>
 		</div>
 

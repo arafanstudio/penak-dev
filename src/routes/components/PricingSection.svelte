@@ -37,7 +37,7 @@
 		'Single Page Design',
 		'Responsive Mobile Friendly',
 		'SEO Optimization',
-		'Free Domain (1th)',
+		'Free Domain (1 thn)',
 		'Support & Maintenance',
 		'Custom Functionality',
 		'CMS Integration'
@@ -51,31 +51,31 @@
 			{ text: 'Single Page Design', included: true },
 			{ text: 'Responsive Mobile Friendly', included: true },
 			{ text: 'SEO Optimization (Basic)', included: true },
-			{ text: 'Free Domain (Subdomain)', included: true },
+			{ text: 'Free Domain .sch.id (1 thn)', included: true },
 			{ text: 'Support & Maintenance (Limited)', included: true },
 			{ text: 'Custom Functionality', included: false },
 			{ text: 'CMS Integration', included: false }
 		],
 		details: {
 			services: [
-				{ text: 'Website Profile Sekolah', included: true },
-				{ text: 'Halaman Informasi & Berita', included: true },
-				{ text: 'Formulir Kontak Dasar', included: true },
-				{ text: 'Galeri Foto', included: true },
-				{ text: 'Custom Branding', included: false }
+				{ text: '7 Hari Kerja', included: true },
+				{ text: 'cPanel', included: false },
+				{ text: 'Free Domain .sch.id', included: true },
+				{ text: 'Email Domain (1 akun)', included: true },
+				{ text: 'Editing Gambar', included: false }
 			],
 			maintenance: [
-				{ text: 'Update Konten Gratis', included: true },
-				{ text: 'Backup Mingguan', included: true },
-				{ text: 'Monitoring 24/7', included: false },
-				{ text: 'Support Email', included: true },
-				{ text: 'SLA Guarantee', included: false }
+				{ text: 'Free Update Page (1 Hal / bln)', included: true },
+				{ text: 'Edit Hal. Tambahan (Rp 30.000)', included: true },
+				{ text: 'Buat Hal. Baru (Rp 40.000)', included: true },
+				{ text: 'Basic Image Editing (Rp 15.000)', included: true },
+				{ text: 'Backup Rutin', included: false }
 			],
 			features: [
-				{ text: 'SEO Basic', included: true },
-				{ text: 'Mobile Responsive', included: true },
+				{ text: 'Pilihan Template (limited)', included: true },
+				{ text: 'SEO Power (Simple Meta Tag)', included: true },
 				{ text: 'SSL Certificate', included: true },
-				{ text: 'Analytics Dashboard', included: false },
+				{ text: 'Analytics', included: false },
 				{ text: 'API Integration', included: false }
 			]
 		},
@@ -85,38 +85,38 @@
 
 	const starterPlan: Plan = {
 		name: 'Starter',
-		price: 'Rp 1.5jt',
-		description: 'Cocok untuk profil pribadi atau landing page sederhana.',
+		price: 'IDR 499.600',
+		description: 'Cocok untuk Profil Pribadi atau UMKM yang sedang Berkembang.',
 		features: [
-			{ text: 'Single Page Design', included: true },
+			{ text: 'Up to 5 Pages Design', included: true },
 			{ text: 'Responsive Mobile Friendly', included: true },
 			{ text: 'SEO Optimization (Basic)', included: true },
-			{ text: 'Free Domain .com (1th)', included: true },
+			{ text: 'Free Domain .web.id (1 thn)', included: true },
 			{ text: 'Support & Maintenance (1 bln)', included: true },
-			{ text: 'Custom Functionality', included: false },
+			{ text: 'Custom Functionality (Limited)', included: true },
 			{ text: 'CMS Integration', included: false }
 		],
 		details: {
 			services: [
-				{ text: 'Landing Page Profesional', included: true },
-				{ text: 'Contact Form Integration', included: true },
-				{ text: 'Social Media Links', included: true },
-				{ text: 'Email Newsletter Setup', included: true },
-				{ text: 'Custom Pages', included: false }
+				{ text: '3 Hari Kerja', included: true },
+				{ text: 'cPanel', included: false },
+				{ text: 'Free .my.id / .web.id / .biz.id', included: true },
+				{ text: 'Email Domain (3 akun)', included: true },
+				{ text: 'Editing Gambar (5 Image + 1 Logo)', included: true }
 			],
 			maintenance: [
-				{ text: 'Monthly Updates', included: true },
-				{ text: 'Backup Mingguan', included: true },
-				{ text: 'Email Support', included: true },
-				{ text: 'Phone Support', included: false },
-				{ text: 'Dedicated Manager', included: false }
+				{ text: 'Free Update Page (1 Hal / bln)', included: true },
+				{ text: 'Edit Hal. Tambahan (Rp 20.000)', included: true },
+				{ text: 'Buat Hal. Baru (Rp 30.000)', included: true },
+				{ text: 'Basic Image Editing (Rp 15.000)', included: true },
+				{ text: 'Backup Rutin', included: false }
 			],
 			features: [
-				{ text: 'SEO Optimization', included: true },
-				{ text: 'Mobile Responsive', included: true },
+				{ text: 'Pilihan Template (Bebas)', included: true },
+				{ text: 'SEO Power (Keyword Setup)', included: true },
 				{ text: 'SSL Certificate', included: true },
-				{ text: 'Basic Analytics', included: true },
-				{ text: 'Third-party Integration', included: false }
+				{ text: 'Analytics', included: false },
+				{ text: 'API Integration', included: false }
 			]
 		},
 		cta: 'Pilih Starter'
@@ -124,38 +124,38 @@
 
 	const businessPlan: Plan = {
 		name: 'Business',
-		price: 'Rp 3.5jt',
+		price: 'IDR 1.215.800',
 		description: 'Solusi profesional untuk bisnis yang sedang berkembang.',
 		features: [
-			{ text: 'Up to 5 Pages Design', included: true },
+			{ text: 'Up to 10 Pages Design', included: true },
 			{ text: 'Responsive Mobile Friendly', included: true },
 			{ text: 'SEO Optimization (Standard)', included: true },
-			{ text: 'Free Domain .com (1th)', included: true },
-			{ text: 'Support & Maintenance (3 bln)', included: true },
+			{ text: 'Free Domain .com (1 thn)', included: true },
+			{ text: 'Support & Maintenance (2 bln)', included: true },
 			{ text: 'Custom Functionality', included: true },
 			{ text: 'CMS Integration', included: true }
 		],
 		details: {
 			services: [
-				{ text: 'Multi-page Website', included: true },
-				{ text: 'CMS Management System', included: true },
-				{ text: 'E-commerce Ready', included: true },
-				{ text: 'Google Maps Integration', included: true },
-				{ text: 'Advanced Contact Forms', included: true }
+				{ text: '3 Hari Kerja', included: true },
+				{ text: '5 GB (shared)', included: true },
+				{ text: 'Free .com / .id / .net', included: true },
+				{ text: 'Email Domain (unlimited)', included: true },
+				{ text: 'Editing Gambar (10 Image + 1 Logo)', included: true }
 			],
 			maintenance: [
-				{ text: 'Monthly Updates', included: true },
-				{ text: 'Weekly Backups', included: true },
-				{ text: 'Email & Chat Support', included: true },
-				{ text: 'Performance Monitoring', included: true },
-				{ text: 'Security Patches', included: true }
+				{ text: 'Free Update Page (2 Hal / bln)', included: true },
+				{ text: 'Edit Hal. Tambahan (Rp 25.000)', included: true },
+				{ text: 'Buat Hal. Baru (Rp 35.000)', included: true },
+				{ text: 'Basic Image Editing (Rp 15.000)', included: true },
+				{ text: 'Backup Rutin (Bulanan)', included: true }
 			],
 			features: [
-				{ text: 'Advanced SEO', included: true },
-				{ text: 'Mobile Responsive', included: true },
+				{ text: 'Pilihan Template (Bebas)', included: true },
+				{ text: 'SEO Power (Indexing & Sitemap)', included: true },
 				{ text: 'SSL Certificate', included: true },
-				{ text: 'Advanced Analytics', included: true },
-				{ text: 'API Integration', included: true }
+				{ text: 'Analytics', included: false },
+				{ text: 'API Integration (basic)', included: true }
 			]
 		},
 		recommended: true,
@@ -164,38 +164,38 @@
 
 	const enterprisePlan: Plan = {
 		name: 'Enterprise',
-		price: 'Rp 7.5jt',
+		price: 'IDR 2.348.400',
 		description: 'Solusi enterprise lengkap untuk organisasi besar.',
 		features: [
-			{ text: 'Unlimited Pages Design', included: true },
+			{ text: 'Up to 15 Pages Design', included: true },
 			{ text: 'Responsive Mobile Friendly', included: true },
 			{ text: 'SEO Optimization (Advanced)', included: true },
-			{ text: 'Free Domain .com (1th)', included: true },
-			{ text: 'Support & Maintenance (12 bln)', included: true },
+			{ text: 'Free Domain .com (1 thn)', included: true },
+			{ text: 'Support & Maintenance (3 bln)', included: true },
 			{ text: 'Custom Functionality', included: true },
 			{ text: 'CMS Integration (Advanced)', included: true }
 		],
 		details: {
 			services: [
-				{ text: 'Unlimited Pages & Features', included: true },
-				{ text: 'Advanced CMS with Workflows', included: true },
-				{ text: 'Full E-commerce Platform', included: true },
-				{ text: 'Multi-location Support', included: true },
-				{ text: 'Custom Integrations', included: true }
+				{ text: '5 Hari Kerja', included: true },
+				{ text: '12 GB (shared)', included: true },
+				{ text: 'Free .com / .id / .net / .co.id', included: true },
+				{ text: 'Email Domain (unlimited)', included: true },
+				{ text: 'Editing Gambar (15 Image + 1 Logo)', included: true }
 			],
 			maintenance: [
-				{ text: 'Weekly Updates', included: true },
-				{ text: 'Daily Backups', included: true },
-				{ text: 'Priority Support 24/7', included: true },
-				{ text: 'Dedicated Account Manager', included: true },
-				{ text: 'Proactive Monitoring', included: true }
+				{ text: 'Free Update Page (3 Hal / bln)', included: true },
+				{ text: 'Edit Hal. Tambahan (Rp 35.000)', included: true },
+				{ text: 'Buat Hal. Baru (Rp 45.000)', included: true },
+				{ text: 'Basic Image Editing (Rp 15.000)', included: true },
+				{ text: 'Backup Rutin (Mingguan)', included: true }
 			],
 			features: [
-				{ text: 'Enterprise SEO Suite', included: true },
-				{ text: 'Mobile & PWA Ready', included: true },
-				{ text: 'Advanced SSL/TLS', included: true },
-				{ text: 'Real-time Analytics', included: true },
-				{ text: 'Multi-API Integration', included: true }
+				{ text: 'Pilihan Template (Custom Layout)', included: true },
+				{ text: 'SEO Power (Indexing & Sitemap)', included: true },
+				{ text: 'SSL Certificate', included: true },
+				{ text: 'Analytics (Google Analytics)', included: true },
+				{ text: 'API Integration (basic)', included: true }
 			]
 		},
 		cta: 'Pilih Enterprise'
@@ -203,38 +203,38 @@
 
 	const customPlan: Plan = {
 		name: 'Custom',
-		price: 'Kontak Kami',
-		description: 'Sistem custom yang disesuaikan dengan kebutuhan bisnis Anda.',
+		price: 'IDR 4.297.000+',
+		description: 'Website custom yang disesuaikan dengan kebutuhan bisnis Anda.',
 		features: [
-			{ text: 'Unlimited Pages Design', included: true },
+			{ text: 'Custom Pages Design', included: true },
 			{ text: 'Responsive Mobile Friendly', included: true },
 			{ text: 'SEO Optimization (Custom)', included: true },
-			{ text: 'Free Domain (Included)', included: true },
+			{ text: 'Free Domain .co / .io (1 thn)', included: true },
 			{ text: 'Support & Maintenance (Custom)', included: true },
 			{ text: 'Custom Functionality', included: true },
 			{ text: 'CMS Integration (Custom)', included: true }
 		],
 		details: {
 			services: [
-				{ text: 'Fully Custom Architecture', included: true },
-				{ text: 'Advanced CMS Solutions', included: true },
-				{ text: 'Complex Business Logic', included: true },
-				{ text: 'Multiple Third-party APIs', included: true },
-				{ text: 'Custom Database Design', included: true }
+				{ text: '14+ Hari Kerja', included: true },
+				{ text: '40 GB (cloud)', included: true },
+				{ text: 'Free .co / .info / .io', included: true },
+				{ text: 'Email Domain (unlimited)', included: true },
+				{ text: 'Custom UI/UX', included: true }
 			],
 			maintenance: [
-				{ text: 'Bi-weekly Updates', included: true },
-				{ text: 'Real-time Backups', included: true },
-				{ text: 'Dedicated Support Team', included: true },
-				{ text: 'Custom SLA', included: true },
-				{ text: 'Proactive Monitoring', included: true }
+				{ text: 'Free Update Page (5 Hal / bln)', included: true },
+				{ text: 'Edit Hal. Tambahan (Rp 40.000)', included: true },
+				{ text: 'Buat Hal. Baru (Rp 50.000)', included: true },
+				{ text: 'Basic Image Editing (Rp 15.000)', included: true },
+				{ text: 'Backup Rutin (Harian)', included: true }
 			],
 			features: [
-				{ text: 'Enterprise Security', included: true },
-				{ text: 'Custom Performance Optimization', included: true },
-				{ text: 'Advanced SSL/TLS', included: true },
-				{ text: 'Custom Analytics', included: true },
-				{ text: 'Unlimited API Integration', included: true }
+				{ text: 'Pilihan Template (Custom Layout)', included: true },
+				{ text: 'SEO Power (Full SEO Strategy)', included: true },
+				{ text: 'SSL Certificate', included: true },
+				{ text: 'Analytics (Custom Dashboard)', included: true },
+				{ text: 'API Integration (Full API)', included: true }
 			]
 		},
 		cta: 'Hubungi Kami'
@@ -247,33 +247,33 @@
 		features: [
 			{ text: 'Unlimited Pages Design', included: true },
 			{ text: 'Responsive Mobile Friendly', included: true },
-			{ text: 'SEO Optimization (Enterprise)', included: true },
-			{ text: 'Free Domain (Included)', included: true },
-			{ text: 'Support & Maintenance (24/7)', included: true },
+			{ text: 'SEO Optimization (Full Optimization)', included: true },
+			{ text: 'Free Any Domain (1 thn)', included: true },
+			{ text: 'Support & Maintenance (6 bln)', included: true },
 			{ text: 'Custom Functionality (SaaS)', included: true },
 			{ text: 'CMS Integration (Multi-tenant)', included: true }
 		],
 		details: {
 			services: [
-				{ text: 'Multi-tenant SaaS Platform', included: true },
-				{ text: 'Unlimited User Accounts', included: true },
-				{ text: 'Advanced Workflow Automation', included: true },
-				{ text: 'White-label Options', included: true },
-				{ text: 'Scalable Infrastructure', included: true }
+				{ text: 'Sesuai Scope', included: true },
+				{ text: 'VPS', included: true },
+				{ text: 'All Ext.', included: true },
+				{ text: 'Email Domain (unlimited)', included: true },
+				{ text: 'Bespoke', included: true }
 			],
 			maintenance: [
-				{ text: 'Continuous Deployment', included: true },
-				{ text: 'Real-time Backups & Redundancy', included: true },
-				{ text: '24/7 Premium Support', included: true },
-				{ text: 'Dedicated DevOps Team', included: true },
-				{ text: 'Automatic Security Updates', included: true }
+				{ text: 'Free Update Page (Managed Service)', included: true },
+				{ text: 'Edit Hal. Tambahan (Custom Fee)', included: true },
+				{ text: 'Buat Hal. Baru (Custom Fee)', included: true },
+				{ text: 'Basic Image Editing (Include)', included: true },
+				{ text: 'Backup Rutin (Harian)', included: true }
 			],
 			features: [
-				{ text: 'Enterprise-grade Security', included: true },
-				{ text: 'Auto-scaling Infrastructure', included: true },
-				{ text: 'Advanced SSL/TLS & Encryption', included: true },
-				{ text: 'Real-time Analytics & Reporting', included: true },
-				{ text: 'Unlimited API Integration', included: true }
+				{ text: 'Pilihan Template (Bespoke)', included: true },
+				{ text: 'SEO Power (Full SEO Strategy)', included: true },
+				{ text: 'SSL Certificate', included: true },
+				{ text: 'Analytics (Advanced BI)', included: true },
+				{ text: 'API Integration (Full API)', included: true }
 			]
 		},
 		cta: 'Hubungi Kami'
@@ -288,46 +288,47 @@
 	let activeThirdCardTab: 'custom' | 'saas' = 'custom';
 	$: currentThirdPlan = activeThirdCardTab === 'custom' ? customPlan : saasPlan;
 
-	// Global Expand State
-	let isAllExpanded = false;
-
 	let sectionRef: HTMLElement;
 	let cards: HTMLElement[] = [];
+	let isAllExpanded = false;
 
 	onMount(() => {
 		gsap.from(cards, {
 			scrollTrigger: {
 				trigger: sectionRef,
-				start: 'top 70%',
+				start: 'top 80%',
 				end: 'top 20%',
-				scrub: 0.5
+				scrub: 1
 			},
+			y: 100,
 			opacity: 0,
-			y: 50,
-			stagger: 0.1,
-			duration: 0.8,
+			stagger: 0.2,
+			duration: 1,
 			ease: 'power3.out'
 		});
 	});
 </script>
 
-<section id="pricing" bind:this={sectionRef} class="py-24 relative overflow-hidden bg-[#000000]">
+<section id="pricing" class="bg-black py-24 relative overflow-hidden" bind:this={sectionRef}>
 	<ParticleBackground />
+	<div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/30 to-black/95 z-0 pointer-events-none"></div>
 	
-	<div class="container relative z-10">
-		<div class="text-center mb-16 space-y-4">
-			<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">Investasi Digital</div>
-			<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
-				Paket Harga Transparan
-			</h3>
-			<p class="text-white/60 max-w-2xl mx-auto text-lg">
-				Pilih paket yang paling sesuai dengan kebutuhan Anda. Kami menyediakan solusi dari profil sekolah hingga sistem kustom.
-			</p>
+	<div class="relative z-10">
+		<div class="container mx-auto px-4 mb-16">
+			<div class="max-w-3xl mx-auto text-center space-y-4">
+				<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">Paket Harga</div>
+				<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
+					Pilih Paket Yang <br /> Sesuai Kebutuhan
+				</h3>
+				<p class="text-lg text-white/60 leading-relaxed">
+					Investasi terbaik untuk pertumbuhan bisnis digital Anda. Transparan, terjangkau, dan berkualitas.
+				</p>
+			</div>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
-			<!-- Card 1: Toggle between Free and Starter -->
-			<div bind:this={cards[0]} class="h-full">
+		<div class="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory carousel-inner">
+			<!-- Card 1: Starter / Free -->
+			<div bind:this={cards[0]} class="h-full flex-shrink-0 w-[85%] md:w-auto snap-center">
 				<Card class="relative bg-white/5 border border-white/10 rounded-[2.5rem] p-6 md:p-8 flex flex-col h-full transition-all duration-500 hover:bg-white/10 hover:border-yellow-200/30 {isAllExpanded ? 'ring-1 ring-yellow-200/20' : ''}">
 					<div class="flex p-1 bg-white/5 rounded-xl mb-6 border border-white/10">
 						<button 
@@ -369,7 +370,7 @@
 
 					<!-- Expanded Details Section -->
 					{#if isAllExpanded && currentFirstPlan.details}
-						<div class="mb-6 space-y-6 border-t border-white/10 pt-6 animate-in fade-in slide-in-from-top-4 duration-500">
+						<div class="mb-6 space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
 							<!-- Services -->
 							<div>
 								<div class="flex items-center gap-2 mb-4">
@@ -442,24 +443,24 @@
 					{/if}
 
 					<div class="space-y-4 mt-auto">
-						{#if currentFirstPlan.note}
-							<p class="text-[10px] text-yellow-200/60 italic text-center">{currentFirstPlan.note}</p>
-						{/if}
 						<Button 
 							variant="outline" 
 							class="w-full h-12 rounded-xl font-bold transition-all duration-300 bg-white/5 border-white/20 text-white hover:bg-white/10 hover:border-yellow-200/50 hover:text-yellow-200"
 						>
 							{currentFirstPlan.cta}
 						</Button>
+						{#if currentFirstPlan.note}
+							<p class="text-[10px] text-white/40 text-center italic">{currentFirstPlan.note}</p>
+						{/if}
 					</div>
 				</Card>
 			</div>
 
 			<!-- Card 2: Business / Enterprise -->
-			<div bind:this={cards[1]} class="h-full">
-				<Card class="relative bg-white/5 border border-yellow-200/30 rounded-[2.5rem] p-6 md:p-8 flex flex-col h-full transition-all duration-500 hover:bg-white/10 hover:border-yellow-200/50 hover:scale-105 hover:z-20 shadow-2xl shadow-yellow-200/5 {isAllExpanded ? 'ring-1 ring-yellow-200/40' : ''}">
+			<div bind:this={cards[1]} class="h-full flex-shrink-0 w-[85%] md:w-auto snap-center">
+				<Card class="relative bg-white/5 border border-yellow-200/30 rounded-[2.5rem] p-6 md:p-8 flex flex-col h-full transition-all duration-500 hover:bg-white/10 hover:border-yellow-200/50 ring-1 ring-yellow-200/20">
 					<div class="absolute -top-4 left-1/2 -translate-x-1/2">
-						<Badge class="bg-yellow-200 text-black font-bold px-4 py-1 rounded-full border-none shadow-lg">PALING POPULER</Badge>
+						<Badge class="bg-yellow-200 text-black font-black px-4 py-1 rounded-full shadow-lg shadow-yellow-200/20">POPULER</Badge>
 					</div>
 
 					<div class="flex p-1 bg-white/5 rounded-xl mb-6 border border-white/10">
@@ -502,7 +503,7 @@
 
 					<!-- Expanded Details Section -->
 					{#if isAllExpanded && currentSecondPlan.details}
-						<div class="mb-6 space-y-6 border-t border-white/10 pt-6 animate-in fade-in slide-in-from-top-4 duration-500">
+						<div class="mb-6 space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
 							<!-- Services -->
 							<div>
 								<div class="flex items-center gap-2 mb-4">
@@ -585,7 +586,7 @@
 			</div>
 
 			<!-- Card 3: Custom / SaaS -->
-			<div bind:this={cards[2]} class="h-full">
+			<div bind:this={cards[2]} class="h-full flex-shrink-0 w-[85%] md:w-auto snap-center">
 				<Card class="relative bg-white/5 border border-white/10 rounded-[2.5rem] p-6 md:p-8 flex flex-col h-full transition-all duration-500 hover:bg-white/10 hover:border-yellow-200/30 {isAllExpanded ? 'ring-1 ring-yellow-200/20' : ''}">
 					<div class="flex p-1 bg-white/5 rounded-xl mb-6 border border-white/10">
 						<button 
@@ -627,7 +628,7 @@
 
 					<!-- Expanded Details Section -->
 					{#if isAllExpanded && currentThirdPlan.details}
-						<div class="mb-6 space-y-6 border-t border-white/10 pt-6 animate-in fade-in slide-in-from-top-4 duration-500">
+						<div class="mb-6 space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
 							<!-- Services -->
 							<div>
 								<div class="flex items-center gap-2 mb-4">
@@ -723,3 +724,34 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+
+	.scrollbar-hide {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.snap-center {
+		scroll-snap-align: center;
+		scroll-snap-stop: always;
+	}
+
+	.carousel-inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	@media (min-width: 768px) {
+		.carousel-inner {
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 80rem; /* 1280px / container max-width */
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+</style>

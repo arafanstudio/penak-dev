@@ -61,28 +61,31 @@
 
 <section id="testimonials" class="bg-black py-24 relative overflow-hidden" bind:this={sectionRef}>
 	<div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/30 to-black/95 z-0 pointer-events-none"></div>
-	<div class="container relative z-10">
-		<div class="flex flex-col lg:flex-row justify-between items-end gap-8 mb-16">
-			<div class="max-w-2xl space-y-4">
-				<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">Testimoni</div>
-				<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
-					Apa Kata Mereka <br /> Tentang Kami
-				</h3>
-			</div>
-			<div class="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
-				<div class="flex">
-					{#each Array(5) as _}
-						<Star size={18} class="text-yellow-200 fill-yellow-200" />
-					{/each}
+	
+	<div class="relative z-10">
+		<div class="container mx-auto px-4 mb-16">
+			<div class="flex flex-col lg:flex-row justify-between items-end gap-8">
+				<div class="max-w-2xl space-y-4">
+					<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">Testimoni</div>
+					<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
+						Apa Kata Mereka <br /> Tentang Kami
+					</h3>
 				</div>
-				<span class="text-white font-bold">4.9/5.0</span>
-				<span class="text-white/40 text-sm ml-2">dari 100+ klien</span>
+				<div class="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-2xl border border-white/10">
+					<div class="flex">
+						{#each Array(5) as _}
+							<Star size={18} class="text-yellow-200 fill-yellow-200" />
+						{/each}
+					</div>
+					<span class="text-white font-bold">4.9/5.0</span>
+					<span class="text-white/40 text-sm ml-2">dari 100+ klien</span>
+				</div>
 			</div>
 		</div>
 
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+		<div class="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory carousel-inner">
 			{#each testimonials as item, i}
-				<div bind:this={cards[i]}>
+				<div bind:this={cards[i]} class="flex-shrink-0 w-[85%] md:w-auto snap-center">
 					<Card class="bg-white/5 border border-white/10 rounded-[2.5rem] p-8 md:p-10 relative overflow-hidden h-full flex flex-col transition-all duration-500 hover:bg-white/10">
 						<div class="absolute -top-4 -right-4 text-yellow-200/10">
 							<Quote size={120} />
@@ -113,10 +116,43 @@
 		</div>
 
 		<!-- Trust Signals -->
-		<div class="mt-20 pt-10 border-t border-white/5 flex flex-wrap justify-center items-center gap-12 opacity-30 grayscale hover:grayscale-0 transition-all duration-500">
-			{#each ['GOOGLE', 'META', 'SHOPIFY', 'STRIPE', 'AWS'] as brand}
-				<span class="text-2xl font-black text-white tracking-tighter">{brand}</span>
-			{/each}
+		<div class="container mx-auto px-4 mt-20">
+			<div class="pt-10 border-t border-white/5 flex flex-wrap justify-center items-center gap-12 opacity-30 grayscale hover:grayscale-0 transition-all duration-500">
+				{#each ['GOOGLE', 'META', 'SHOPIFY', 'STRIPE', 'AWS'] as brand}
+					<span class="text-2xl font-black text-white tracking-tighter">{brand}</span>
+				{/each}
+			</div>
 		</div>
 	</div>
 </section>
+
+<style>
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+
+	.scrollbar-hide {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+
+	.snap-center {
+		scroll-snap-align: center;
+		scroll-snap-stop: always;
+	}
+
+	.carousel-inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	@media (min-width: 768px) {
+		.carousel-inner {
+			padding-left: 0;
+			padding-right: 0;
+			max-width: 80rem; /* 1280px / container max-width */
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+</style>

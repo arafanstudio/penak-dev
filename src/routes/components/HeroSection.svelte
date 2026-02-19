@@ -69,27 +69,29 @@
 
     <div class="container relative z-10 text-center">
         <div class="max-w-5xl mx-auto space-y-8" bind:this={textContent}>
-            <!-- Sub-headline -->
-            <div class="flex items-center justify-center gap-4">
-                <div class="w-12 h-px bg-yellow-200/50"></div>
-                <span class="text-yellow-200 text-xs md:text-sm font-bold tracking-[0.4em] uppercase">
-                    Website Beres, Bisnis Sukses.
-                </span>
-            </div>
-            
-            <!-- Headline -->
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] font-['Playfair_Display']">
-                Bikin Website?<br>Gak Pakai Pusing.
-            </h1>
-            
-            <!-- CTA Button -->
-            <div class="pt-6">
-                <Button 
-                    variant="default" 
-                    class="bg-[#F3E5AB] hover:bg-[#EEDC9A] text-black font-bold px-10 py-7 text-lg rounded-sm transition-all duration-300 shadow-2xl"
-                >
-                    Konsultasi Sekarang
-                </Button>
+            <div class="flex flex-col items-center gap-6">
+                <!-- Sub-headline -->
+                <div class="flex items-center justify-center gap-4 order-2 md:order-none">
+                    <div class="w-8 md:w-12 h-px bg-yellow-200/50"></div>
+                    <span class="text-yellow-200 text-[9px] md:text-sm font-bold tracking-[0.4em] uppercase">
+                        Website Beres, Bisnis Sukses.
+                    </span>
+                </div>
+                
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] font-['Playfair_Display'] order-1 md:order-none">
+                    Bikin Website?<br>Gak Pakai Pusing.
+                </h1>
+                
+                <!-- CTA Button -->
+                <div class="pt-0 md:pt-6 order-3 md:order-none">
+                    <Button 
+                        variant="default" 
+                        class="bg-[#F3E5AB] hover:bg-[#EEDC9A] text-black font-bold px-7 md:px-10 py-5.5 md:py-7 text-sm md:text-lg rounded-sm transition-all duration-300 shadow-2xl"
+                    >
+                        Konsultasi Sekarang
+                    </Button>
+                </div>
             </div>
         </div>
     </div>
