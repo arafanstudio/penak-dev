@@ -73,7 +73,7 @@
 			</div>
 
 			<!-- Links Columns -->
-			<div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-12">
+			<div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-3">
 				<div class="link-column space-y-6">
 					<h4 class="text-sm font-bold uppercase tracking-[0.2em] text-yellow-200/80">Layanan</h4>
 					<ul class="space-y-4">

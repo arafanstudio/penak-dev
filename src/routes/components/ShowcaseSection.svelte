@@ -167,7 +167,7 @@
 			<!-- Row 1: Moves Left -->
 			<div 
 				bind:this={row1Container}
-				class="carousel-inner flex gap-6 overflow-x-auto scrollbar-hide"
+				class="carousel-inner flex gap-6 mb-6 overflow-x-auto scrollbar-hide"
 				style="scroll-behavior: auto;"
 			>
 				{#each duplicatedRow1 as item, index (index)}

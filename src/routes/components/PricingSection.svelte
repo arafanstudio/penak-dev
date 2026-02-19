@@ -314,19 +314,19 @@
 	<div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/30 to-black/95 z-0 pointer-events-none"></div>
 	
 	<div class="relative z-10">
-		<div class="container mx-auto px-4 mb-16">
+		<div class="container mx-auto px-4 mb-8">
 			<div class="max-w-3xl mx-auto text-center space-y-4">
 				<div class="text-yellow-200/80 text-sm font-bold tracking-[0.2em] uppercase">Paket Harga</div>
 				<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
-					Pilih Paket Yang <br /> Sesuai Kebutuhan
+					Pilih Porsi <br class="block md:hidden" />Realisasi Visi
 				</h3>
-				<p class="text-lg text-white/60 leading-relaxed">
-					Investasi terbaik untuk pertumbuhan bisnis digital Anda. Transparan, terjangkau, dan berkualitas.
+				<p class="text-sm md:text-lg text-white/60 leading-relaxed">
+					Mewujudkan ambisi melalui proporsi tepat, melahirkan kualitas tanpa kompromi
 				</p>
 			</div>
 		</div>
 
-		<div class="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory carousel-inner">
+		<div class="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory carousel-inner pt-4">
 			<!-- Card 1: Starter / Free -->
 			<div bind:this={cards[0]} class="h-full flex-shrink-0 w-[85%] md:w-auto snap-center">
 				<Card class="relative bg-white/5 border border-white/10 rounded-[2.5rem] p-6 md:p-8 flex flex-col h-full transition-all duration-500 hover:bg-white/10 hover:border-yellow-200/30 {isAllExpanded ? 'ring-1 ring-yellow-200/20' : ''}">

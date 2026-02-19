@@ -17,8 +17,8 @@
 
 	const testimonials: Testimonial[] = [
 		{
-			name: 'Andi Pratama',
-			role: 'CEO',
+			name: 'Pawit Kurniawan',
+			role: 'Marketing Manager',
 			company: 'TechVibe Indonesia',
 			content: 'Penak Dev berhasil mengubah visi bisnis kami menjadi website yang sangat profesional. Performa dan desainnya luar biasa.',
 			rating: 5
@@ -71,7 +71,7 @@
 						Testimoni
 					</div>
 					<h3 class="text-3xl md:text-5xl font-extrabold text-white leading-tight font-['Playfair_Display']">
-						Apa Kata Mereka <br class="hidden lg:block" /> Tentang Kami
+						Kesan Mitra <br />Bukti Kinerja
 					</h3>
 				</div>
 
