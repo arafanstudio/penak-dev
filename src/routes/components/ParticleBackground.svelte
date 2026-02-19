@@ -8,6 +8,7 @@
 	let width: number;
 	let height: number;
 	let animationFrame: number;
+	let resizeObserver: ResizeObserver;
 
 	class Particle {
 		x: number;
@@ -108,11 +109,31 @@
 		if (!canvas) return;
 		const parent = canvas.parentElement;
 		if (!parent) return;
-		width = parent.offsetWidth;
-		height = parent.offsetHeight;
+		
+		const newWidth = parent.offsetWidth;
+		const newHeight = parent.offsetHeight;
+		
+		// Only re-init if width changes significantly or if it's the first time
+		// For height changes (like expansion), we just update the canvas size
+		// to prevent stretching, but we don't necessarily want to reset all particles
+		const isFirstInit = !width || !height;
+		const widthChanged = width !== newWidth;
+		const heightChanged = height !== newHeight;
+
+		width = newWidth;
+		height = newHeight;
 		canvas.width = width;
 		canvas.height = height;
-		init();
+
+		if (isFirstInit || widthChanged) {
+			init();
+		} else if (heightChanged) {
+			// If only height changed (expansion), we might want to add more particles
+			// to fill the new space, or just let existing ones float there.
+			// To keep it simple and "not expanding" in look, we just keep existing ones.
+			// But we need to make sure they don't look stretched.
+			// The canvas.height update already fixed the stretching.
+		}
 	}
 
 	function handleMouseMove(e: MouseEvent) {
@@ -129,19 +150,25 @@
 
 	onMount(() => {
 		ctx = canvas.getContext('2d')!;
-		handleResize();
-		animate();
-
+		
 		const parent = canvas.parentElement;
 		if (parent) {
+			// Use ResizeObserver to detect parent size changes (including expansion)
+			resizeObserver = new ResizeObserver(() => {
+				handleResize();
+			});
+			resizeObserver.observe(parent);
+
 			parent.addEventListener('mousemove', handleMouseMove);
 			parent.addEventListener('mouseleave', handleMouseLeave);
 		}
 
-		window.addEventListener('resize', handleResize);
-		
+		animate();
+
 		return () => {
-			window.removeEventListener('resize', handleResize);
+			if (resizeObserver) {
+				resizeObserver.disconnect();
+			}
 			if (parent) {
 				parent.removeEventListener('mousemove', handleMouseMove);
 				parent.removeEventListener('mouseleave', handleMouseLeave);

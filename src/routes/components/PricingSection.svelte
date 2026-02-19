@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Check, X, ChevronDown } from 'lucide-svelte';
 	import { onMount } from 'svelte';
+	import { slide } from 'svelte/transition';
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import Button from '$lib/components/ui/button.svelte';
@@ -280,17 +281,16 @@
 	};
 
 	let activeFirstCardTab: 'free' | 'starter' = 'starter';
-	$: currentFirstPlan = activeFirstCardTab === 'free' ? freePlan : starterPlan;
-
 	let activeSecondCardTab: 'business' | 'enterprise' = 'business';
-	$: currentSecondPlan = activeSecondCardTab === 'business' ? businessPlan : enterprisePlan;
-
 	let activeThirdCardTab: 'custom' | 'saas' = 'custom';
+	let isAllExpanded = false;
+
+	$: currentFirstPlan = activeFirstCardTab === 'free' ? freePlan : starterPlan;
+	$: currentSecondPlan = activeSecondCardTab === 'business' ? businessPlan : enterprisePlan;
 	$: currentThirdPlan = activeThirdCardTab === 'custom' ? customPlan : saasPlan;
 
 	let sectionRef: HTMLElement;
 	let cards: HTMLElement[] = [];
-	let isAllExpanded = false;
 
 	onMount(() => {
 		gsap.from(cards, {
@@ -310,7 +310,9 @@
 </script>
 
 <section id="pricing" class="bg-black py-24 relative overflow-hidden" bind:this={sectionRef}>
-	<ParticleBackground />
+	<div class="absolute inset-0 h-[1000px] pointer-events-none overflow-hidden">
+		<ParticleBackground />
+	</div>
 	<div class="absolute inset-0 bg-gradient-to-b from-black/95 via-black/30 to-black/95 z-0 pointer-events-none"></div>
 	
 	<div class="relative z-10">
@@ -369,8 +371,8 @@
 					</div>
 
 					<!-- Expanded Details Section -->
-					{#if isAllExpanded && currentFirstPlan.details}
-						<div class="mb-6 space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
+						{#if isAllExpanded && currentFirstPlan.details}
+							<div transition:slide={{ duration: 500 }} class="mb-6 space-y-6">
 							<!-- Services -->
 							<div>
 								<div class="flex items-center gap-2 mb-4">
@@ -456,11 +458,13 @@
 				</Card>
 			</div>
 
-			<!-- Card 2: Business / Enterprise -->
+			<!-- Card 2: Business / Enterprise (Recommended) -->
 			<div bind:this={cards[1]} class="h-full flex-shrink-0 w-[85%] md:w-auto snap-center">
 				<Card class="relative bg-white/5 border border-yellow-200/30 rounded-[2.5rem] p-6 md:p-8 flex flex-col h-full transition-all duration-500 hover:bg-white/10 hover:border-yellow-200/50 ring-1 ring-yellow-200/20">
 					<div class="absolute -top-4 left-1/2 -translate-x-1/2">
-						<Badge class="bg-yellow-200 hover:bg-yellow-300 text-black font-black px-4 py-1 rounded-full shadow-lg shadow-yellow-200/20">POPULER</Badge>
+						<Badge class="bg-yellow-200 text-black font-bold px-4 py-1 rounded-full shadow-lg shadow-yellow-200/20">
+							PALING POPULER
+						</Badge>
 					</div>
 
 					<div class="flex p-1 bg-white/5 rounded-xl mb-6 border border-white/10">
@@ -502,8 +506,8 @@
 					</div>
 
 					<!-- Expanded Details Section -->
-					{#if isAllExpanded && currentSecondPlan.details}
-						<div class="mb-6 space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
+						{#if isAllExpanded && currentSecondPlan.details}
+							<div transition:slide={{ duration: 500 }} class="mb-6 space-y-6">
 							<!-- Services -->
 							<div>
 								<div class="flex items-center gap-2 mb-4">
@@ -627,8 +631,8 @@
 					</div>
 
 					<!-- Expanded Details Section -->
-					{#if isAllExpanded && currentThirdPlan.details}
-						<div class="mb-6 space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
+						{#if isAllExpanded && currentThirdPlan.details}
+							<div transition:slide={{ duration: 500 }} class="mb-6 space-y-6">
 							<!-- Services -->
 							<div>
 								<div class="flex items-center gap-2 mb-4">
